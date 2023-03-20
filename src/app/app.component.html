@@ -1,0 +1,16 @@
+<div ngClass="header">
+  <h1>{{angular | uppercase}} {{http | uppercase}}</h1>
+</div>
+
+<div ngClass="div">
+  <div *ngFor="let item of post; let i = index" ngClass="border">
+    <!-- <p>{{ i + 1 }}</p> -->
+    <p>ID: <span>{{item.id}}</span></p>
+    <p>Name: <span>{{item.name}}</span></p>
+    <p>Username: <span>{{item.username}}</span></p>
+    <p>Email: <span>{{item.email}}</span></p>
+    <p>Phone: <span>{{item.phone}}</span></p>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
